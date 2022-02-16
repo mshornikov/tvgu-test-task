@@ -218,9 +218,23 @@ header div.name {
     margin: 0 0.17vw 0 0.3vw;
 }
 
+.photo {
+    background-image: url("/images/photo.jpg");
+    background-size: contain;
+}
+
+.photo img {
+    width: 42px;
+    height: 55px;
+}
+
 .news-row {
     display: grid;
     grid-template-columns: 68% 32%;
+}
+
+.article {
+    padding: 0 40px 0 0;
 }
 
 .article img {
@@ -228,8 +242,9 @@ header div.name {
 }
 
 .news-feed {
-    border: 1px 0 1px 0;
-    border-color: solid #E9E9E9;
+
+    border: solid #E9E9E9;
+    border-width: 0 1px 0 1px;
 }
 
 /* Footer */
