@@ -34,7 +34,10 @@ header {
 }
 
 .title-bg {
-    min-height: 58vh;
+    min-height: 63vh;
+    height: max-content;
+
+    padding: 0 0 47px 0;
 
     background: linear-gradient(259.11deg, rgba(155, 155, 155, 0.32) -14.45%, rgba(182, 182, 182, 0) 65.72%), linear-gradient(114.03deg, rgba(192, 192, 192, 0.64) -7.08%, rgba(124, 179, 218, 0) 61.78%), url(Oxbridge-Editing-Essential-Skills-Leadership.jpg), url(rsz_10_istock-1153675389.jpg), url(zzLD3HOR7LI.jpg);
     background-image: url("../images/bg-header.png");
@@ -101,6 +104,8 @@ header.container {
     line-height: 29px;
     display: flex;
 
+    margin: 0 0 22px 0;
+
     color: #FFFFFF;
 }
 
@@ -110,11 +115,47 @@ header.container {
     font-size: 3.75em;
     line-height: 73px;
     white-space: pre-wrap;
+    
+    display: flex;
+
+    margin: 0 0 75px 0;
 
     color: #FFFFFF;
 
     /* text-shadow: 0px 4px 164px rgba(0, 0, 0, 0.25); */
 }
+
+.news-tag {
+    padding: 11px 35px 12px 35px;
+    margin: 0 15px 10px 0;
+
+    border-radius: 59px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-decoration: none;
+    color:white;
+}
+
+.news-tags-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 57px 0;
+
+    width: 100%;
+}
+
+.news-tag#first {
+    background: linear-gradient(114.07deg, #ACB6E5 15.44%, #86FDE8 122.33%);
+    backdrop-filter: blur(9px);
+}
+
+.news-tag#second {
+    background: linear-gradient(108.12deg, #F15F79 12.33%, #EC86FD 111.01%);
+    backdrop-filter: blur(10px);
+} 
 
 header div.contacts {
     display: flex;
@@ -155,10 +196,48 @@ header div.name {
     border: 1px solid #E2E2E2;
 }
 
+.line-share {
+    border: 1px solid #EEEEEE;
+}
+
+.sharing-title {
+    font-weight: 600;   
+    font-size: 18px;
+    line-height: 22px;
+
+    margin: 1.8vh 1.04vw 1.8vh 0;
+}
+
+.sharing .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sharing .socials .item {
+    margin: 0 0.17vw 0 0.3vw;
+}
+
+.news-row {
+    display: grid;
+    grid-template-columns: 68% 32%;
+}
+
+.article img {
+    width: 100%;
+}
+
+.news-feed {
+    border: 1px 0 1px 0;
+    border-color: solid #E9E9E9;
+}
+
 /* Footer */
 
 footer {
     color: #FFFFFF;
+
+    margin: 10vh 0 0 0;
 
     background-image: url("../images/footer.png");
     background-repeat: no-repeat;
