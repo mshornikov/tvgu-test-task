@@ -6,7 +6,7 @@
 .container {
     margin: auto;
     max-width: 1200px;
-    width: 62vw;
+    width: 62.5vw;
 }
 
 /* Header */
@@ -31,7 +31,7 @@ header {
 }
 
 .title-bg {
-    height: 58vh;
+    min-height: 58vh;
 
     background: linear-gradient(259.11deg, rgba(155, 155, 155, 0.32) -14.45%, rgba(182, 182, 182, 0) 65.72%), linear-gradient(114.03deg, rgba(192, 192, 192, 0.64) -7.08%, rgba(124, 179, 218, 0) 61.78%), url(Oxbridge-Editing-Essential-Skills-Leadership.jpg), url(rsz_10_istock-1153675389.jpg), url(zzLD3HOR7LI.jpg);
     background-image: url("../images/bg-header.png");
@@ -45,10 +45,6 @@ header {
 .header-logo {
     margin: 27px 0px 25px 43px;
 }
-
-/* header nav select {
-    margin: 0 5.2% 0 0 ;
-} */
 
 header nav div.lang-selector {
     margin: 0 0 0 5.2%;
@@ -66,7 +62,6 @@ select.header-select {
 
     color: white;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     display: flex;
@@ -130,7 +125,6 @@ header div.contacts {
 
 div.contacts.name {
     font-style: normal;
-    font-weight: 500;
     font-size: 13px;
     line-height: 16px;
 }
@@ -155,4 +149,97 @@ header div.name {
 
     width: 100vw;
     border: 1px solid #E2E2E2;
+}
+
+/* Footer */
+
+footer {
+    color: #FFFFFF;
+
+    background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    position: fixed;
+
+    width: 100%;
+}
+
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;  
+}
+
+footer .inner .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .inner .line {
+    width: 100%;
+
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+}
+
+footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .row .column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .row .column .header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+footer .row .column .item {
+    text-transform: uppercase;
+
+    font-size: 10px;
+    line-height: 12px;
+}
+
+footer .row .item {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+footer .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .contacts .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contacts .phone {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+footer .contacts .adress {
+    font-size: 14px;
+    line-height: 17px;
 }
