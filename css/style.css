@@ -271,7 +271,7 @@ footer .inner .logo {
     flex-direction: column;
     align-items: center;
 
-    margin: 5vh 0 0 0;
+    margin: 5vh auto 0 auto;
 }
 
 footer .inner .line {
