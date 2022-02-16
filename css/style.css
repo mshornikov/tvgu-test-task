@@ -1,5 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
+
+    font-style: normal;
     font-family: "Montserrat";
 }
 
@@ -75,6 +78,7 @@ select.header-select {
 
     padding: 0.2em 0.9em 0.2em  0.2em ; 
 }
+
 .lang-selector {
     display: flex;
 }
@@ -147,7 +151,7 @@ header div.name {
 .line2 {
     margin: 86px 0 0 0;
 
-    width: 100vw;
+    width: 99vw;
     border: 1px solid #E2E2E2;
 }
 
@@ -162,12 +166,6 @@ footer {
     background-position: center;
 }
 
-footer {
-    position: fixed;
-
-    width: 100%;
-}
-
 footer .inner {
     display: flex;
     flex-direction: column;
@@ -178,13 +176,21 @@ footer .inner .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 5vh 0 0 0;
 }
 
 footer .inner .line {
     width: 100%;
 
+    margin: 2vh 0 4vh;
+
     opacity: 0.2;
     border: 1px solid #FFFFFF;
+}
+
+footer .inner .line#upper {
+    margin: 4vh 0 5vh 0;
 }
 
 footer .row {
@@ -192,6 +198,10 @@ footer .row {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+footer .row#copyright {
+    margin: 0 0 4.2vh 0;
 }
 
 footer .row .column {
@@ -205,10 +215,15 @@ footer .row .column .header {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+
+    margin: 0 0 2.05vh 0;
 }
 
 footer .row .column .item {
     text-transform: uppercase;
+    
+    width: 9.4vw;
+    margin: 0 1.9vh 0.93vh 0;
 
     font-size: 10px;
     line-height: 12px;
@@ -218,6 +233,9 @@ footer .row .item {
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
+
+    text-decoration: none;
+    color:#FFFFFF;
 }
 
 footer .contacts {
@@ -233,10 +251,16 @@ footer .contacts .socials {
     align-items: center;
 }
 
+footer .contacts .socials img {
+    margin: 0 1vw 0 0;
+}
+
 footer .contacts .phone {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
+
+    margin: 0 0 0.75vh 0;
 }
 
 footer .contacts .adress {
