@@ -9,8 +9,6 @@
 .container {
     margin: auto;
     max-width: 1116px;
-    width: fit-content;
-    /* width: 62.5vw; */
 }
 
 /* Header */
