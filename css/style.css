@@ -518,6 +518,7 @@ footer .contacts .adress {
 @media screen and (max-width: 768px){
     .container {
         max-width: 720px;
+        padding: 0 21px;
     }
     
     .news-heading {
