@@ -102,7 +102,6 @@ header {
 }
 
 /* Page */
-
 .title-bg {
     background: linear-gradient(259.11deg, rgba(155, 155, 155, 0.32) -14.45%, rgba(182, 182, 182, 0) 65.72%), linear-gradient(114.03deg, rgba(192, 192, 192, 0.64) -7.08%, rgba(124, 179, 218, 0) 61.78%), url(Oxbridge-Editing-Essential-Skills-Leadership.jpg), url(rsz_10_istock-1153675389.jpg), url(zzLD3HOR7LI.jpg);
     background-image: url("../images/bg-header-heart.png");
@@ -115,7 +114,7 @@ header {
     padding: 260px 0 0 0;
 }
 
-.news-heading .title {
+.category-title {
     font-weight: bold;
     font-size: 1.5em;
 
@@ -136,16 +135,16 @@ header {
     text-shadow: 0px 4px 164px rgba(0, 0, 0, 0.25);
 }
 
-.article h1 {
+.article-title {
     font-size: 1.875em;
     margin: 60px 0 41px 0;
 }
 
-p {
+.text {
     font-size: 1em;
     line-height: 1.25em;
 
-    margin: 0 0 41px 0;
+    margin: 0 0 30px 0;
 }
 
 .news-tag {
@@ -203,27 +202,31 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+
+    margin: 28px 0 28px 0;
 }
 
-.path .page {
+.path-page {
     white-space: nowrap;
     max-width: 526px;
     overflow: hidden;
     text-overflow: ellipsis;
 
+    margin: 5px 0 5px 0;
+
     color: #F15F79;
     font-size: 0.875em;
 }
 
-.path img {
+.arrow-to-right {
     margin: 0 18px 0 18px;
 }
 
-.path .page#current {
+.path-page#current {
     text-decoration: none;
     color: #8F8F8F;
 
-    margin: 0 32px 0 0;
+    margin-right: 32px;
 }
 
 .back-button {
@@ -231,10 +234,15 @@ p {
     color: #FFFFFF;
 
     padding: 7px 14px 7px 14px;
-    margin: 28px 0 28px 0;
 
     background: #5E7CE4;
     border-radius: 2px;
+
+    filter: drop-shadow(0px 4px 17px rgba(0, 0, 0, 0.25));
+}
+
+.back-button::before {
+    content: '';
 }
 
 .sharing {
@@ -251,7 +259,7 @@ p {
     margin: 0 1.04vw 0 0;
 }
 
-.sharing .socials {
+.sharing-socials {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -259,7 +267,7 @@ p {
     margin: 1.2vh 0 1.2vh 0;
 }
 
-.sharing .socials .item {
+.sharing-socials .item {
     margin: 0 0.17vw 0 0.3vw;
 }
 
@@ -289,22 +297,84 @@ p {
 .news-feed {
     border: solid #E9E9E9;
     border-width: 0 1px 0 1px;
+
+    padding: 0 18px 0 18px;
 }
 
-.news-feed .header {
+.news-picture {
+    margin: 0 0 30px 0;
+}
+
+.news-feed-header {
     font-weight: 600;
     font-size: 1.5em;
     line-height: 1.8125em;
+
+    margin-top: 60px;
 }
 
-.news-feed .line {
+.news-feed-line {
     border: 0;
     height: 3px;
     background: linear-gradient(90deg, #0152B4 0%, #F15F79 100%);
+
+    margin-bottom: 35px;
 }
 
-/* Footer */
+.news-card {
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-color:#F2F2F2;
 
+    padding-bottom: 15px;
+}
+
+.news-card-title {
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 22px;
+
+    margin-top: 21px;
+}
+
+.news-card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 36px;
+}
+
+.bold-text {
+    font-weight: 600;
+
+    margin: 0 0 21.5px 0;
+}
+
+.list-links {
+    margin: 0 0 0 87px;
+}
+
+.list-item {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 0.8em;
+
+    text-decoration: none;
+
+    color: #0052B4;
+}
+
+.list-links li {
+    margin: 0 0 22px 0;
+}
+
+.article-subtitle {
+    margin: 0 0 22px 0;
+}
+
+
+/* Footer */
 footer {
     color: #FFFFFF;
 
@@ -375,6 +445,7 @@ footer .row .column .item {
     width: 9.4vw;
     margin: 0 1.9vh 0.93vh 0;
 
+    font-weight: 300;
     font-size: 0.625em;
     line-height: 1.2em;
 }
@@ -418,4 +489,10 @@ footer .contacts .phone {
 
 footer .contacts .adress {
     font-size: 0.875em;
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        max-width: 768px;
+    }
 }
