@@ -89,6 +89,9 @@ header {
 .header-phone {
     font-weight: 600;
     font-size: 1.125em;
+
+    color: white;
+    text-decoration: none;
 }
 
 .header-name {
@@ -144,6 +147,7 @@ p {
 
     margin: 0 0 41px 0;
 }
+
 .news-tag {
     padding: 11px 35px 12px 35px;
     margin: 0 15px 10px 0;
@@ -407,6 +411,9 @@ footer .contacts .phone {
     line-height: 1.8125em;
 
     margin: 0 0 0.75vh 0;
+
+    color: white;
+    text-decoration: none;
 }
 
 footer .contacts .adress {
