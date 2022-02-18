@@ -589,4 +589,12 @@ footer .contacts .adress {
     .news-title {
         font-size: 30px;
     }
+
+    .header-menu-bar {
+        display: none;
+    }
+
+    .header-contacts {
+        display: none;
+    }
 }
